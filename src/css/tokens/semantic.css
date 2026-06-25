@@ -1,0 +1,57 @@
+:root,
+[data-theme="light"] {
+  --surface: var(--c-white);
+  --surface-raised: var(--c-gray-50);
+  --surface-sunken: var(--c-gray-100);
+  --surface-inverse: var(--c-ink);
+  --text: var(--c-ink);
+  --text-muted: var(--c-gray-600);
+  --text-inverse: var(--c-white);
+  --border-color: var(--c-ink);
+  --border-muted: var(--c-gray-300);
+  --primary: var(--c-navy);
+  --primary-contrast: var(--c-white);
+  --accent: var(--c-orange);
+  --accent-strong: var(--c-orange-600);
+  --accent-contrast: var(--c-white);
+  --focus-ring: var(--c-orange);
+  --halftone-dot: var(--c-gray-200);
+
+  --tone-neutral-bg: var(--c-gray-100);
+  --tone-neutral-fg: var(--c-gray-800);
+  --tone-info-bg: var(--c-info);
+  --tone-info-fg: var(--c-white);
+  --tone-success-bg: var(--c-success);
+  --tone-success-fg: var(--c-white);
+  --tone-warning-bg: var(--c-warning);
+  --tone-warning-fg: var(--c-ink);
+  --tone-danger-bg: var(--c-danger);
+  --tone-danger-fg: var(--c-white);
+  --tone-accent-bg: var(--c-orange);
+  --tone-accent-fg: var(--c-white);
+  --tone-primary-bg: var(--c-navy);
+  --tone-primary-fg: var(--c-white);
+}
+
+[data-theme="dark"] {
+  --surface: var(--c-ink);
+  --surface-raised: var(--c-graphite);
+  --surface-sunken: var(--c-gray-900);
+  --surface-inverse: var(--c-white);
+  --text: var(--c-white);
+  --text-muted: var(--c-gray-300);
+  --text-inverse: var(--c-ink);
+  --border-color: var(--c-white);
+  --border-muted: var(--c-gray-600);
+  --primary: var(--c-orange);
+  --primary-contrast: var(--c-ink);
+  --accent: var(--c-orange);
+  --accent-strong: var(--c-orange-200);
+  --accent-contrast: var(--c-ink);
+  --focus-ring: var(--c-orange);
+  --halftone-dot: var(--c-gray-700);
+
+  --tone-neutral-bg: var(--c-gray-700);
+  --tone-neutral-fg: var(--c-gray-100);
+  --tone-warning-fg: var(--c-ink);
+}
