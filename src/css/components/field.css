@@ -1,0 +1,85 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.field--inline {
+  gap: var(--space-1);
+}
+
+.field__label {
+  font-family: var(--font-display);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+.field__hint {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+}
+
+.field__control,
+.input,
+.textarea,
+.select {
+  width: 100%;
+  min-height: var(--space-12);
+  padding: var(--space-2) var(--space-3);
+  background-color: var(--surface);
+  color: var(--text);
+  border: var(--border);
+  font-size: var(--text-base);
+  transition: border-color var(--motion-fast) var(--ease-out);
+}
+
+.textarea {
+  min-height: calc(var(--space-16) + var(--space-12));
+  resize: vertical;
+  line-height: var(--leading-normal);
+}
+
+.field__control::placeholder,
+.input::placeholder,
+.textarea::placeholder {
+  color: var(--text-muted);
+}
+
+.field__control:hover,
+.input:hover,
+.textarea:hover,
+.select:hover {
+  border-color: var(--accent);
+}
+
+.field[data-invalid="true"] .field__control,
+.field[data-invalid="true"] .input,
+.field[data-invalid="true"] .textarea,
+.field[data-invalid="true"] .select {
+  border-color: var(--tone-danger-bg);
+}
+
+.field__error {
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  color: var(--tone-danger-bg);
+}
+
+.field__error[hidden] {
+  display: none;
+}
+
+.choice {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-base);
+}
+
+.choice input {
+  width: var(--space-5);
+  height: var(--space-5);
+  accent-color: var(--accent);
+}
