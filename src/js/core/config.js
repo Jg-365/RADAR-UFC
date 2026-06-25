@@ -1,0 +1,28 @@
+export const config = Object.freeze({
+  appName: "RADAR UFC",
+  institution: "Universidade Federal do Ceará",
+  dataSource: "mock",
+  apiBaseUrl: "/api",
+  iconSprite: "../assets/icons/sprite.svg",
+  logo: "../assets/images/logo.png",
+  logoMark: "../assets/images/logo-mark.svg",
+  logoWordmark: "../assets/images/logo-wordmark.svg",
+  pageSize: 8,
+  protocolPrefix: "UFC",
+  protocolDigits: 6,
+  draftAutosaveMs: 1500,
+  toastTimeoutMs: 5000,
+  searchParam: "q",
+  protocolParam: "protocolo",
+  nextParam: "next",
+  storageKeys: Object.freeze({
+    theme: "radar.theme",
+    session: "radar.session",
+    draft: "radar.draft",
+    store: "radar.store",
+  }),
+  themes: Object.freeze({
+    light: "light",
+    dark: "dark",
+  }),
+});
