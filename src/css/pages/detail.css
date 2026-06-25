@@ -1,0 +1,100 @@
+.detail__back {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-display);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.detail__head {
+  padding-bottom: var(--space-6);
+  border-bottom: var(--border-thick);
+}
+
+.detail__protocol-code {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  padding: var(--space-1) var(--space-3);
+  border: var(--border);
+  background-color: var(--surface-raised);
+}
+
+.detail__meta {
+  font-size: var(--text-sm);
+}
+
+.detail__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: var(--space-8);
+  align-items: start;
+}
+
+.detail__body {
+  max-width: 70ch;
+  white-space: pre-line;
+}
+
+.panel {
+  padding: var(--space-5);
+  border: var(--border);
+  background-color: var(--surface-raised);
+  position: sticky;
+  top: calc(var(--space-16) + var(--space-4));
+}
+
+.response {
+  padding: var(--space-4);
+  border: var(--border);
+  border-inline-start: var(--border-width-thick) solid var(--primary);
+  background-color: var(--surface);
+}
+
+.response__author {
+  font-family: var(--font-display);
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  font-size: var(--text-sm);
+}
+
+.response__time {
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.response__body {
+  margin-top: var(--space-2);
+  color: var(--text);
+}
+
+.rating-box {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-5);
+  border: var(--border);
+  background-color: var(--surface-raised);
+}
+
+.rating-box__score {
+  font-family: var(--font-display);
+  font-weight: var(--weight-black);
+  font-size: var(--text-lg);
+  color: var(--accent-strong);
+}
+
+@media (max-width: 860px) {
+  .detail__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .panel {
+    position: static;
+  }
+}
