@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RADAR UFC — Escuta e transparência</title>
+    <meta
+      name="description"
+      content="Canal de escuta, manifestações e transparência institucional da Universidade Federal do Ceará."
+    />
+    <link rel="icon" href="../assets/images/logo-mark.svg" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script>
+      try {
+        var stored = JSON.parse(localStorage.getItem("radar.theme"));
+        document.documentElement.dataset.theme =
+          stored ||
+          (matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light");
+      } catch (error) {}
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Pular para o conteúdo</a>
+    <div class="page">
+      <div data-shell="header"></div>
+      <main class="page__main" id="main">
+        <section class="hero halftone">
+          <div class="container hero__inner">
+            <div>
+              <p class="eyebrow">Universidade Federal do Ceará</p>
+              <h1 class="hero__title">
+                Sua voz no <em>radar</em> da universidade.
+              </h1>
+              <p class="hero__lead">
+                Registre manifestações, acompanhe por protocolo e veja como a
+                instituição responde. Tudo aberto, rastreável e transparente.
+              </p>
+              <div class="hero__actions">
+                <a class="btn btn--primary" href="registrar.html">
+                  Registrar manifestação
+                </a>
+                <a class="btn btn--ghost" href="manifestacoes.html">
+                  Ver manifestações
+                </a>
+              </div>
+            </div>
+            <div class="hero__art halftone" role="img" aria-label="Espaço reservado para imagem do banner">
+              <span class="hero__art-label">Banner</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container stack--loose stack">
+            <div class="cluster cluster--between">
+              <div>
+                <p class="eyebrow">Panorama</p>
+                <h2>Indicadores em tempo real</h2>
+              </div>
+              <a class="btn btn--ghost btn--sm" href="transparencia.html">
+                Ver transparência
+              </a>
+            </div>
+            <div class="grid grid--3" data-home-metrics></div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container stack--loose stack">
+            <div class="cluster cluster--between">
+              <div>
+                <p class="eyebrow">Recentes</p>
+                <h2>Últimas manifestações públicas</h2>
+              </div>
+              <a class="btn btn--ghost btn--sm" href="manifestacoes.html">
+                Ver todas
+              </a>
+            </div>
+            <div class="stack" data-home-recent></div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container stack stack--loose">
+            <div class="stack stack--tight">
+              <p class="eyebrow">Como funciona</p>
+              <h2>Transparente do início ao fim</h2>
+            </div>
+            <div class="grid grid--3">
+              <div class="step-brief">
+                <span class="step-brief__num">1</span>
+                <h3>Registre</h3>
+                <p class="text-muted">
+                  Descreva sua manifestação e receba um protocolo.
+                </p>
+              </div>
+              <div class="step-brief">
+                <span class="step-brief__num">2</span>
+                <h3>Acompanhe</h3>
+                <p class="text-muted">
+                  Siga cada etapa: moderação, análise e resposta.
+                </p>
+              </div>
+              <div class="step-brief">
+                <span class="step-brief__num">3</span>
+                <h3>Avalie</h3>
+                <p class="text-muted">
+                  Diga se a demanda foi resolvida e ajude a melhorar.
+                </p>
+              </div>
+            </div>
+            <div>
+              <a class="btn btn--ghost" href="como-funciona.html">
+                Ver fluxo completo
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+      <div data-shell="footer"></div>
+    </div>
+
+    <script type="module" src="../js/app.js"></script>
+    <script type="module" src="../js/features/home/home.js"></script>
+  </body>
+</html>
