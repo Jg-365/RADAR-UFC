@@ -46,48 +46,46 @@ Desenvolver uma interface web simples, acessível, responsiva e organizada, feit
 - `localStorage` para simulação de rascunhos e estados.
 - Sem React, Vue, Angular, Next.js, backend ou banco de dados.
 
-## Organização sugerida do código
+## Organização do código
+
+Arquitetura orientada a features, com camadas separadas e fonte de dados trocável (mock agora, API depois).
 
 ```text
 RADAR-UFC/
-  index.html
-  pages/
-    manifestacoes.html
-    detalhe-manifestacao.html
-    registrar.html
-    login.html
-    minhas-manifestacoes.html
-    admin-dashboard.html
-    moderacao.html
-    transparencia.html
-    como-funciona.html
-  css/
-    reset.css
-    variables.css
-    base.css
-    layout.css
-    components.css
-    pages.css
-    responsive.css
-  js/
-    app.js
-    data.js
-    components.js
-    filters.js
-    form-validation.js
-    manifestations.js
-    storage.js
-    moderation.js
-    admin.js
-    metrics.js
-    utils.js
-  assets/
-    icons/
-    images/
   docs/
-  tests/
+  src/
+    html/                paginas (uma por rota)
+    assets/
+      icons/sprite.svg   biblioteca unica de icones
+      images/            logos
+    css/
+      tokens/            cores, espacamento, tipografia
+      base/              reset, elementos
+      layout/            grid, header, footer
+      components/        botao, campo, tabela, timeline...
+      pages/             estilos por pagina
+      main.css           ponto de entrada (imports)
+    js/
+      core/              config, dom, storage, event-bus, http
+      shared/            enums, labels, validators, formatters, rotas
+      models/            classes de dominio
+      data/              repositorios mock + seed
+      services/          regras de aplicacao
+      ui/                shell, tema, icones, componentes
+      features/          controladores por feature
+      app.js             bootstrap
   .github/
 ```
+
+## Como executar
+
+Servir a pasta `src/` por HTTP (ES Modules exigem servidor):
+
+```bash
+cd src && python3 -m http.server 8000
+```
+
+Abrir `http://localhost:8000/html/index.html`.
 
 ## Fluxo principal simulado
 
