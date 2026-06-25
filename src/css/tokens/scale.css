@@ -1,0 +1,70 @@
+:root {
+  --space-0: 0;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-14: 56px;
+  --space-16: 64px;
+  --control-height: 48px;
+  --search-expanded: 240px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  --radius: 0;
+  --border-width: 2px;
+  --border-width-thick: 4px;
+  --border: var(--border-width) solid var(--border-color);
+  --border-thick: var(--border-width-thick) solid var(--border-color);
+  --border-muted-line: var(--border-width) solid var(--border-muted);
+
+  --font-display: "Archivo", "Arial Narrow", "Helvetica Neue", system-ui, sans-serif;
+  --font-body: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.125rem;
+  --text-lg: clamp(1.25rem, 1.15rem + 0.5vw, 1.375rem);
+  --text-xl: clamp(1.4rem, 1.15rem + 1.2vw, 1.75rem);
+  --text-2xl: clamp(1.6rem, 1.2rem + 2vw, 2.25rem);
+  --text-3xl: clamp(1.95rem, 1.3rem + 3.2vw, 3rem);
+  --text-display: clamp(2.4rem, 1.5rem + 4.5vw, 4.25rem);
+
+  --weight-regular: 400;
+  --weight-medium: 600;
+  --weight-bold: 800;
+  --weight-black: 900;
+
+  --leading-tight: 1.05;
+  --leading-snug: 1.25;
+  --leading-normal: 1.55;
+
+  --tracking-tight: -0.02em;
+  --tracking-wide: 0.04em;
+  --tracking-caps: 0.08em;
+
+  --container-max: 1200px;
+  --container-narrow: 760px;
+  --container-pad: var(--space-5);
+
+  --z-base: 0;
+  --z-header: 100;
+  --z-dialog: 1000;
+  --z-toast: 1100;
+
+  --motion-fast: 120ms;
+  --motion-base: 200ms;
+  --motion-slow: 320ms;
+  --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+  --focus-width: 3px;
+  --focus-offset: 2px;
+}
