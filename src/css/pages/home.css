@@ -1,0 +1,106 @@
+.hero {
+  border-bottom: var(--border-thick);
+}
+
+.hero__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  gap: var(--space-12);
+  align-items: center;
+  padding-block: var(--space-20);
+}
+
+.hero__title {
+  font-size: var(--text-3xl);
+  margin-block: var(--space-4);
+}
+
+.hero__title em {
+  font-style: normal;
+  color: var(--accent);
+}
+
+.hero__lead {
+  font-size: var(--text-md);
+  color: var(--text-muted);
+  margin-bottom: var(--space-8);
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.hero__art {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 4 / 3;
+  border: var(--border);
+  background-color: var(--surface-raised);
+}
+
+.hero__art-label {
+  font-family: var(--font-display);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.metric {
+  border: var(--border);
+  padding: var(--space-6);
+  background-color: var(--surface);
+}
+
+.metric__value {
+  font-family: var(--font-display);
+  font-weight: var(--weight-black);
+  font-size: var(--text-2xl);
+  line-height: var(--leading-tight);
+  color: var(--accent);
+}
+
+.metric__label {
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.step-brief {
+  padding: var(--space-6);
+  border: var(--border);
+  background-color: var(--surface);
+}
+
+.step-brief__num {
+  display: inline-grid;
+  place-items: center;
+  width: var(--space-10);
+  height: var(--space-10);
+  margin-bottom: var(--space-4);
+  border: var(--border);
+  background-color: var(--accent);
+  color: var(--accent-contrast);
+  font-family: var(--font-display);
+  font-weight: var(--weight-black);
+}
+
+.step-brief h3 {
+  margin-bottom: var(--space-2);
+}
+
+@media (max-width: 860px) {
+  .hero__inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+    padding-block: var(--space-12);
+  }
+
+  .hero__art {
+    order: -1;
+  }
+}
